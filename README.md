@@ -2,7 +2,7 @@
 
 Esta implementação foi feita com o intuito de praticar a linguagem Java juntamente com o framework Spring Boot. 
 
-Repositório original do desafio (aqui)[https://github.com/feltex/desafio-itau-backend.git]
+Repositório original do desafio [aqui](https://github.com/feltex/desafio-itau-backend.git)
 
 
 # desafio-itau-backend
