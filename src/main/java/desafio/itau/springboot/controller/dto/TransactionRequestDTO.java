@@ -1,6 +1,5 @@
 package desafio.itau.springboot.controller.dto;
 
-import java.math.BigDecimal;
 import java.time.OffsetDateTime;
 
 import desafio.itau.springboot.model.Transaction;
@@ -12,13 +11,13 @@ public class TransactionRequestDTO {
 	
 	@NotNull
 	@Min(0)
-	private BigDecimal valor;
+	private Double valor;
 	
 	@NotNull
 	@PastOrPresent
 	private OffsetDateTime dataHora;
 
-	public TransactionRequestDTO(BigDecimal valor, OffsetDateTime dataHora) {
+	public TransactionRequestDTO(Double valor, OffsetDateTime dataHora) {
 		this.valor = valor;
 		this.dataHora = dataHora;
 	}

@@ -1,19 +1,17 @@
 package desafio.itau.springboot.model;
 
-import java.math.BigDecimal;
 import java.time.OffsetDateTime;
 
-import org.springframework.boot.autoconfigure.domain.EntityScan;
 
 
 public class Transaction {
-	private BigDecimal value;
+	private double value;
 	private OffsetDateTime dateTime;
 	
-	public BigDecimal getValue() {
+	public double getValue() {
 		return value;
 	}
-	public void setValue(BigDecimal value) {
+	public void setValue(double value) {
 		this.value = value;
 	}
 	public OffsetDateTime getDateTime() {
