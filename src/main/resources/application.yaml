@@ -1,4 +1,4 @@
 spring:
   application:
     name: springboot
-    transaction-statistics-time: 60
+    transaction-statistics-time: 1000

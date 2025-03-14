@@ -1,6 +1,8 @@
 package desafio.itau.springboot.service;
 
 import java.time.OffsetDateTime;
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.DoubleSummaryStatistics;
 import java.util.List;
 import java.util.stream.Stream;
@@ -31,8 +33,9 @@ public class TransactionService {
 	public DoubleSummaryStatistics getTransactionsStatistics() {
 		OffsetDateTime limitStatisticsTime = OffsetDateTime.now().minusSeconds(transactionStatisticsTime);
 		Stream<Transaction> allTransactions = (Stream<Transaction>) storage.getAllItems();
+		Stream<Transaction> allTransactionsTest = storage.getAllItems();
 		
-		List<Transaction> transactionsInTime = List.of();
+		List<Transaction> transactionsInTime = new ArrayList<Transaction>();
 		
 		for (var transaction: allTransactions.toList()) {
 			
